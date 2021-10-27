@@ -6,7 +6,7 @@ function function1(polegadas){
 
 //Função 2, recebe uma string e converte em URL
 function function2(string){
-let URL = "http://www."+ string + ".com.br"
+let URL = "http://www." + string + ".com.br"
 return URL
 }
 
