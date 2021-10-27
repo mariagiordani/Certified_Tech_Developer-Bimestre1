@@ -51,7 +51,7 @@ return tipoDoParametro
 //Função 9, recebemos um raio e retornamos a circunferência.
 function function9(raioDoCirculo){
 let circunferencia = raioDoCirculo / Math.PI
-return circunferencia
+return circunferencia.toFixed(2)
 //o calculo é Raio dividido pelo PI = Circunferencia
 }
 
