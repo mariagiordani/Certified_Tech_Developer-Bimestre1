@@ -54,5 +54,3 @@ let circunferencia = raioDoCirculo / Math.PI
 return circunferencia.toFixed(2)
 //o calculo é Raio dividido pelo PI = Circunferencia
 }
-
-console.log(function9(100))
