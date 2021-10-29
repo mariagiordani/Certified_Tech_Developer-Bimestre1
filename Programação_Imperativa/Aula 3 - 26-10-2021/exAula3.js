@@ -18,7 +18,7 @@ return URL
 
 //Função 4, converter idade de cachorro para humano
 function function4(idadeHumano){
-let idadeCachorro = idadeHumano*7
+let idadeCachorro = idadeHumano * 7
 return idadeCachorro
 }
 
@@ -29,6 +29,8 @@ let diasUteisTrabalhados = 22
 let valorDaHora = salario / (horasTrabalhas * diasUteisTrabalhados)
 return valorDaHora.toFixed(2)
 }
+
+console.log(function4(10))
 
 //Função 6, calculadora de IMC
 function function6(altura, peso){
