@@ -1,0 +1,12 @@
+* {
+    background-color: gold;
+}
+
+ul {
+    background-color: grey;
+    padding: 15px;
+    border: double 5px blue;
+    height: 50px;
+    width: 500px;
+}
+
