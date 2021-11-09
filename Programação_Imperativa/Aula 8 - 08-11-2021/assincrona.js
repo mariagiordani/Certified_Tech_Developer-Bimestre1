@@ -1,8 +1,3 @@
-
-
-
-
-
 function podeSubir(altura, acompanhante){
  if (altura <= 200 && altura >= 140){
 return console.log("Acesso Autorizado")
