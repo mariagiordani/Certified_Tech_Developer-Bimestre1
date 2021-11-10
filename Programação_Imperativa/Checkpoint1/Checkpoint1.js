@@ -36,4 +36,3 @@ if(tempoDoCliente >= 0 && tempoDoCliente < tempo){
 
 
 }
-console.log(microondas("PiPsoca", 0))
