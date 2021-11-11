@@ -31,7 +31,8 @@ switch (comida){
         return "Prato Inexistente, não se esqueça dos acentos!"
 
 }
-if(tempoDoCliente >= 0 && tempoDoCliente < tempo || tempoDoCliente < 0){
+
+if(tempoDoCliente < tempo){
         return "Prato Pronto \nTempo Insuficiente!"
 }else if(tempoDoCliente >= tempo && tempoDoCliente < (tempo*2)){
         return "Prato pronto, bom apetite!!"
@@ -43,4 +44,4 @@ if(tempoDoCliente >= 0 && tempoDoCliente < tempo || tempoDoCliente < 0){
 }
 
 
-console.log(microondas("PiPoca", 50))
+console.log(microondas("PiPoca", -5))
