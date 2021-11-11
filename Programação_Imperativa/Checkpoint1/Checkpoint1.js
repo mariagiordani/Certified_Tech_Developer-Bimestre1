@@ -31,17 +31,16 @@ switch (comida){
         return "Prato Inexistente, não se esqueça dos acentos!"
 
 }
-if(tempoDoCliente >= 0 && tempoDoCliente < tempo){
-        return "Tempo Insuficiente!"
+if(tempoDoCliente >= 0 && tempoDoCliente < tempo || tempoDoCliente < 0){
+        return "Prato Pronto \nTempo Insuficiente!"
 }else if(tempoDoCliente >= tempo && tempoDoCliente < (tempo*2)){
         return "Prato pronto, bom apetite!!"
 }else if(tempoDoCliente >= (tempo*2) && tempoDoCliente < (tempo*3)){
-    return "A Comida Queimou!"
+        return "Prato Pronto \nA Comida Queimou!"
 }else if(tempoDoCliente >= (tempo*3)){
-    return "KABUUUUM!!!"
+        return "Prato Pronto \nKABUUUUM!!!"
+}
 }
 
 
-
-
-}
+console.log(microondas("PiPoca", 50))
