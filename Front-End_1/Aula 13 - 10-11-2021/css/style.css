@@ -1,0 +1,23 @@
+* {
+    background-color:burlywood;
+    box-sizing: border-box;
+
+}
+img{
+    margin: 5px 0 20px 0;
+}
+label{
+    padding: 5px;
+}
+
+#formulario1{
+    display: flex;
+}
+
+.campo{
+    margin: 5px;
+    background-color: blueviolet;
+}
+
+
+
