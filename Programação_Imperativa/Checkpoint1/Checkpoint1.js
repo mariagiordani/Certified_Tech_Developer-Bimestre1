@@ -1,3 +1,12 @@
+//Equipe 2
+//Marcos Paulo Costa
+//Ehrich Mendes de Menezes
+//Ettore Muniz
+//Felipe Stefani
+//Laura Pertile
+//Laiane Alessandra
+
+
 function microondas(pratoEscolhido, tempoDoCliente){
     let comida = pratoEscolhido.toLowerCase()
     let tempo = 0
