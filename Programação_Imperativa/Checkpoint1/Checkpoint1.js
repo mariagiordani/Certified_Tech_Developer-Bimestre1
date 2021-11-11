@@ -8,7 +8,7 @@
 
 
 function microondas(pratoEscolhido, tempoDoCliente){
-    let comida = pratoEscolhido.toLowerCase()
+    let comida = pratoEscolhido.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
     let tempo = 0
 
 switch (comida){
@@ -44,4 +44,4 @@ if(tempoDoCliente < tempo){
 }
 
 
-console.log(microondas("PiPoca", -5))
+console.log(microondas("PíPócá", 50))
