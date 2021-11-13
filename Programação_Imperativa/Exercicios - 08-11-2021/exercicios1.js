@@ -21,4 +21,4 @@ let teste = a +5
 return teste
 }
 
-console.log(imprimirInverso(2, 3))
+console.log(imprimirInverso(3, 2))
