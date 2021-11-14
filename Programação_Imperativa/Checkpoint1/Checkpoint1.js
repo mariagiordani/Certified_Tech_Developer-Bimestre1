@@ -43,5 +43,3 @@ if(tempoDoCliente < tempo){
 }
 }
 
-
-console.log(microondas("feijão", 12))
