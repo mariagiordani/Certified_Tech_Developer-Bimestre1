@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#tabela{
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    text-align: center;
+}
+
+.taghtml > td:nth-child(){
+    background-color: brown;
+}

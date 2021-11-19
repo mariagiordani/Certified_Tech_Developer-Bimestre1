@@ -1,11 +1,10 @@
-var readlineSync = require('readline-sync');
-var qtAlunos = readlineSync.questionInt('Digite a quantidade de alunos: ')
+var qtAlunos = 3
 var a, notaIndividual, notaTotal, media
 a = 1
 notaTotal = 0
 function mediaAlunos(){
 while(a <= qtAlunos){
-notaIndividual = readlineSync.questionInt('Digita a nota do aluno ' + a + ' :')
+notaIndividual = 6.5
 notaTotal = notaTotal + notaIndividual
 a++
 }
