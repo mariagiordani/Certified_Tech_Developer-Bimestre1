@@ -1,4 +1,4 @@
-let array1 = [1, 2, 3, 4, 5]
+let array1 = [19, 2, 11, 4, 10, 15]
 let array2 = ["o", "l", "a"]
 let array3 = ["star wars", "matrix",  "mr. robot", "o preço do amanhã", "a vida é bela"]
 let array4 = ["Toy Story", "Procurando Nemo", "Kung-fu Panda", "Wally", "Fortnite"]
@@ -12,6 +12,8 @@ let a = arrayQualquer.length - 1
     console.log(arrayQualquer[i])
     }
 }
+
+imprimirInverso(array1)
 
 function inverter(arrayQualquer){
 let b = arrayQualquer.length - 1
@@ -88,7 +90,7 @@ let f = arrayQualquer1.length
     }
 }
 
-compararArray(asiaScores, euroScores)
+
 
 
 
