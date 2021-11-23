@@ -1,7 +1,7 @@
 const jogador1 = [23, 69, 32]
 const jogador2 = [13, 67, 43]
 
-function encontrarGanhardor(a, b){
+function encontrarGanhador(a, b){
     let pontos1 = 0
     let pontos2 = 0
     let rodadas = a.length
@@ -28,4 +28,4 @@ function encontrarGanhardor(a, b){
         }
 }
 
-encontrarGanhardor(jogador1, jogador2)
+encontrarGanhador(jogador1, jogador2)
