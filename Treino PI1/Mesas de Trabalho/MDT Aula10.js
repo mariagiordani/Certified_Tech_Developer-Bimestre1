@@ -71,7 +71,7 @@ function juntarArrays(arrayQualquer1, arrayQualquer2){
     for(i=0;i<e;i++){
     arrayFinal.push(arrayQualquer2[i])
     }
-    let infiltrado = arrayFinal[e-1]
+    let infiltrado = arrayFinal.pop()
     arrayFinal.pop()
     return console.log(arrayFinal)
 }
