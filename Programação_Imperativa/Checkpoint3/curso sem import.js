@@ -6,7 +6,7 @@ function Aluno(nomeParam, qtFaltasParam, notasParam) {
     //2º Criar metodos "calcular media" e "faltas"
     this.calcularMedia = function () {
         let media = 0
-        for (i = 0; i < this.notas.length; i++) {
+        for (let i = 0; i < this.notas.length; i++) {
             media += this.notas[i]
         }
         return media / this.notas.length
@@ -30,28 +30,29 @@ function Curso(nomeDoCursoParam, notaDeAprovacaoParam, faltasMaximasParam, lista
         return this.listaDeEstudantes.push(alunoNovo)
     }
     this.aprovarAluno = function (alunoAvaliado) {
-        let aprovado
+        let aprovado = false
         if (alunoAvaliado.calcularMedia() >= this.notaDeAprovacao && alunoAvaliado.qtFaltas < this.faltasMaximas) {
             //Caso o aluno tenha a media maior ou igual e faltas menor
-            return aprovado = true
+            aprovado = true
         } else if (alunoAvaliado.calcularMedia() >= (this.notaDeAprovacao + (this.notaDeAprovacao * 0.1)) && alunoAvaliado.qtFaltas == this.faltasMaximas) {
             //Caso o aluno tenha exatamente a quantidade de faltas maximas pra passar, e a media maior ou igual que a nota minima + 10%
-            return aprovado = true
-        } else {
-            return aprovado = false
-        }
+            aprovado = true
+        } 
+            return aprovado
     }
     //confirmar com o professor
     this.alunosAprovados = function () {
         let listaAlunosAprovados = []
 
-        listaAlunosAprovados.push(this.aprovarAluno(aluno1))
-        listaAlunosAprovados.push(this.aprovarAluno(aluno2))
-        listaAlunosAprovados.push(this.aprovarAluno(aluno3))
+        for(let i=0;i<this.listaDeEstudantes.length;i++){
+            listaAlunosAprovados.push(this.aprovarAluno(this.listaDeEstudantes[i]))
+            //console.log(this.aprovarAluno(this.listaDeEstudantes[i]))
+        }
 
-        console.log(listaAlunosAprovados)
+            console.log(listaAlunosAprovados)
 
     }
+
 
 }
 const FrontEnd = new Curso("Front-End", 7, 7, [aluno1, aluno2, aluno3])
@@ -62,4 +63,4 @@ const ProgImperativa = new Curso("Programação Imperativa", 7, 2, [aluno1, alun
 
 
 //console.log para testar o alunosAprovados()
-//ProgImperativa.alunosAprovados() 
+ProgImperativa.alunosAprovados() 
