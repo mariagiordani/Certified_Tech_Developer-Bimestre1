@@ -63,4 +63,4 @@ const ProgImperativa = new Curso("Programação Imperativa", 7, 2, [aluno1, alun
 
 
 //console.log para testar o alunosAprovados()
-ProgImperativa.alunosAprovados() 
+//ProgImperativa.alunosAprovados() 
